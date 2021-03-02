@@ -21,4 +21,4 @@ Keep making the top-most test pass until all tests pass.
   * **BONUS: problems/05-leet-code-108.js** as a scratch pad to work on the LeetCode.com
     problem at https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/
   * **BONUS: problems/06-leet-code-450.js** as a scratch pad to work on the LeetCode.com
-    problem at https://leetcode.com/problems/delete-node-in-a-bst/
+    problem at https://leetcode.com/problems/delete-node-in-a-bst/# w8d1-binarySearchTrees
