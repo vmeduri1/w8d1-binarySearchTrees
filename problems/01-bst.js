@@ -48,18 +48,33 @@ class BST {
     searchIter(val) {
         const queue = [this.root];
         if (!this.root) return false;
+<<<<<<< HEAD
+=======
+
+>>>>>>> 35204892d676ec94a54e097c7ceeced671873c8f
         while (queue.length > 0) {
             const curr = queue.shift();
             if (curr.val === val) {
                 return true;
+<<<<<<< HEAD
             }
             if (curr.left !== null) {
                 queue.push(curr.left);
             }
+=======
+            }
+            if (curr.left !== null) {
+                queue.push(curr.left);
+            }
+>>>>>>> 35204892d676ec94a54e097c7ceeced671873c8f
             if (curr.right !== null) {
                 queue.push(curr.right);
             }
         }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 35204892d676ec94a54e097c7ceeced671873c8f
         return false;
     }
 }
