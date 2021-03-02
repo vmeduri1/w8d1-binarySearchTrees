@@ -39,12 +39,36 @@ class BST {
 
     // Perform a recursive search through the binary search tree
     searchRecur(val, currentNode = this.root) {
-        // Your code here
+        if (!currentNode) return false;
+
+        if (currentNode.val === val) {
+            return true
+        } else if (currentNode.val > val) {
+            return this.searchRecur(val, currentNode.left);
+        } else if (currentNode.val < val) {
+            return this.searchRecur(val, currentNode.right);
+        }
     }
 
     // Perform an iterative search through the binary search tree
     searchIter(val) {
-        // Your code here
+        const queue = [this.root];
+        if (!this.root) return false;
+        
+        while (queue.length > 0) {
+            const curr = queue.shift();
+            if (curr.val === val) {
+                return true;
+            } 
+            if (curr.left !== null) {
+                queue.push(curr.left);
+            } 
+            if (curr.right !== null) {
+                queue.push(curr.right);
+            }
+        }
+
+        return false;
     }
 }
 
